@@ -12,7 +12,7 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('default/index.html.twig');
+        return $this->render('AppBundle:Default:index.html.twig');
     }
 
     /**
@@ -24,7 +24,7 @@ class DefaultController extends Controller
      */
     public function helloAction($name, $_format)
     {
-        return $this->render('default/hello.'.$_format.'.twig', array(
+        return $this->render('AppBundle:Default:hello.'.$_format.'.twig', array(
             'name' => $name
         ));
     }
