@@ -1,11 +1,13 @@
 {# src/AppBundle/Resources/views/Default/hello.html.twig #}
 {% extends 'AppBundle:Default:base.html.twig' %}
 
+{% block title %}Hello {{ name }}{% endblock %}
+
 {% block body %}
     <div class="container-fluid theme-showcase">
         <div class="row">
             <div class="col-xs-12 col-md-8">
-                <h1>Hi {{ name }}! Welcome to Symfony!</h1>
+                <h1>Hi {{ name }}! Welcome to NeoTrack!</h1>
             </div>
         </div>
     </div>
