@@ -28,4 +28,15 @@ class DefaultController extends Controller
             'name' => $name
         ));
     }
+
+    /**
+     * @Route("/everything", name="everything")
+     */
+    public function dbAction()
+    {
+        $client = $this->container->get('neo4j_client');
+        $labels = $client->getLabels();
+        $data = print_r($labels);
+        return $this->render('AppBundle:Default:everything.php.twig', array('data' => $data));
+    }
 }

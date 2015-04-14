@@ -16,6 +16,9 @@ class MenuBuilder extends ContainerAware
         $menu->addChild('Home', array('route' => 'homepage'))
             ->setAttribute('icon', 'fa fa-home');
 
+        $menu->addChild('Everything', array('route' => 'everything'))
+            ->setAttribute('icon', 'fa fa-database');
+
         $menu->addChild('Hello', array('route' => 'hello', 'routeParameters' => array('name' => 'gene')))
             ->setAttribute('icon', 'fa fa-user');
 

@@ -1,5 +1,11 @@
 # This file is a "template" of what your parameters.yml file should look like
 parameters:
+    neo4j_protocol:     http
+    neo4j_host:         127.0.0.1
+    neo4j_port:         7473
+    neo4j_user:         username
+    neo4j_password:     password
+
     database_driver:   pdo_mysql
     database_host:     127.0.0.1
     database_port:     ~

@@ -1,0 +1,21 @@
+{# src/AppBundle/Resources/views/Default/everything.html.twig #}
+{% extends 'AppBundle:Default:base.html.twig' %}
+
+{% block title %}Give me everything!{% endblock %}
+
+{% block body %}
+    <div class="container-fluid theme-showcase">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <h1>Let's get it all!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <p>
+                    {{ data }}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
